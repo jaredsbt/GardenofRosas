@@ -73,6 +73,7 @@ export default function App() {
 const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
+    backgroundColor: `#f0f8ff`,
   },
 
   container: {
