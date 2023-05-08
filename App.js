@@ -1,8 +1,14 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
 import Entypo from '@expo/vector-icons/Entypo';
 import * as SplashScreen from 'expo-splash-screen';
 import * as Font from 'expo-font';
+import { 
+  StyleSheet, 
+  Text, 
+  View,
+  ScrollView,
+  Dimensions,
+} from 'react-native';
 
 // Keep the splash screen visible while we fetch resources
 SplashScreen.preventAutoHideAsync();
@@ -45,15 +51,44 @@ export default function App() {
   }
 
   return (
-    <View
-      style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
-      onLayout={onLayoutRootView}>
-      <Text>Bring your Dream Home to Life! 👋</Text>
-      <Entypo name="rocket" size={30} />
-    </View>
+    <ScrollView style = {styles.scrollContainer}>
+      <View style = {styles.box}><Text></Text></View>
+    </ScrollView>
+
+    // <View>
+    //   <View
+    //     style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
+    //     onLayout={onLayoutRootView}>
+    //     <Text>Bring your Dream Home to Life! 👋</Text>
+    //     <Entypo name="rocket" size={30} />
+    //   </View>
+    // </View>
+    
   );
 }
 
+const styles = StyleSheet.create({
+  scrollContainer: {
+    flex: 1,
+  },
+
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: 2,
+  },
+
+  box: {
+    margin: 2,
+    width: Dimensions.get('window').width / 2 -6,
+    height: 200,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f1c40f'
+  }
+
+});
 
 // import { StatusBar } from 'expo-status-bar';
 // import { StyleSheet, Text, View } from 'react-native';
