@@ -48,7 +48,7 @@ export default function App() {
     <View
       style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}
       onLayout={onLayoutRootView}>
-      <Text>SplashScreen Demo! 👋</Text>
+      <Text>Bring your Dream Home to Life! 👋</Text>
       <Entypo name="rocket" size={30} />
     </View>
   );
