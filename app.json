@@ -7,7 +7,7 @@
     "icon": "./assets/roseIcon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/BlueGradient.jpg",
+      "image": "./assets/BlueGradient.jpeg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
