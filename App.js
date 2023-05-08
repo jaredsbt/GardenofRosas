@@ -51,7 +51,7 @@ export default function App() {
   }
 
   return (
-    <ScrollView style = {styles.scrollContainer}>
+    <ScrollView style = {styles.scrollContainer} onLayout={onLayoutRootView}>
       <View style = {styles.container}>
         <View style = {styles.box}><Text>Picture 1</Text></View>
         <View style = {styles.box}><Text>Picture 2</Text></View>
