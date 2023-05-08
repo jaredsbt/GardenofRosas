@@ -59,6 +59,11 @@ export default function App() {
         <View style = {styles.box}><Text>Picture 4</Text></View>
       </View>
 
+      <View style = {styles.bottom}>
+        <Text>Plan your Future Home!</Text>
+      </View>
+
+
     </ScrollView>
 
     // <View>
@@ -76,7 +81,7 @@ export default function App() {
 const styles = StyleSheet.create({
   scrollContainer: {
     flex: 1,
-    backgroundColor: `#f0f8ff`,
+    backgroundColor: '#000000',
   },
 
   container: {
@@ -93,7 +98,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#f1c40f'
+  },
+
+  bottom: {
+    margin: 2,
+    width: Dimensions.get('screen').width,
+    height: Dimensions.get('screen').height / 3,
+    justifyContent: 'center',
+    alignContent: 'center',
+    backgroundColor: '#e6e6fa',
   }
+
 
 });
 
