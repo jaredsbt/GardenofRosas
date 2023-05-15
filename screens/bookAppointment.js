@@ -1,7 +1,7 @@
 import React from "react";
-import { View, Button } from "react-native";
+import { View, Button, StyleSheet } from "react-native";
 
-const Home = () => {
+const bookAppointment = () => {
     return (
         <ScrollView style = {styles.scrollContainer} onLayout={onLayoutRootView}>
             <View>
@@ -16,3 +16,5 @@ const styles = StyleSheet.create({
         flex: 1,
     },
 })
+
+export default bookAppointment;
